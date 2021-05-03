@@ -40,11 +40,12 @@ const renderSection = (id) => {
   }
 
   for (let i = 0; i < menu.length; i++) {
-    const elementName = document.createElement("h3");
+    const elementName = document.createElement("h4");
     const contentName = document.createTextNode(`${menu[i].name} `);
     const contentPrice = document.createTextNode(` \\$${menu[i].price}`);
 
     elementName.appendChild(contentName);
+    elementName.classList.add("section_name");
     elementName.appendChild(contentPrice);
     if (menu[i].spicy === true) {
       elementName.classList.add("spicy");
@@ -52,10 +53,11 @@ const renderSection = (id) => {
 
     section.appendChild(elementName);
 
-    const elementDescription = document.createElement("h5");
+    const elementDescription = document.createElement("p");
     const contentDescription = document.createTextNode(
       `${menu[i].description}`
     );
+    elementDescription.classList.add("section_description");
     elementDescription.appendChild(contentDescription);
     section.appendChild(elementDescription);
   }
