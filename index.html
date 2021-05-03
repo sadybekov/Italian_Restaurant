@@ -15,42 +15,49 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <header>
             <h1>Fancy Italian Restaurant</h1>
           </header>
         </div>
       </div>
 
-      <div class="row">
-        <!-- <main> -->
-        <div class="col-md-4 section">
-          <section id="starters">
-            <h2>Starters</h2>
-          </section>
+      <main>
+        <div class="row">
+          <div class="col-md-4 section">
+            <section id="starters">
+              <h2>Starters</h2>
+            </section>
+          </div>
+          <div class="col-md-4 section">
+            <section id="pasta">
+              <h2>Pasta</h2>
+            </section>
+          </div>
+          <div class="col-md-4 section">
+            <section id="pizza">
+              <h2>Pizza</h2>
+            </section>
+          </div>
         </div>
-        <div class="col-md-4 section">
-          <section id="pasta">
-            <h2>Pasta</h2>
-          </section>
-        </div>
-        <div class="col-md-4 section">
-          <section id="pizza">
-            <h2>Pizza</h2>
-          </section>
-        </div>
-        <!-- </main> -->
-      </div>
+      </main>
 
-      <div>
-        <footer>
-          <ul class="disclaimers">
-            <li class="disclaimer spicy">= Spicy</li>
-          </ul>
-        </footer>
-      </div>
+      <footer>
+        <div class="row">
+          <div class="col-sm-3">
+            <ul class="disclaimers">
+              <li class="disclaimer spicy">= Spicy</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <input type="checkbox" id="spicyCheckbox" checked />
+            <label for="spicyCheckbox"> Show spicy</label>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="src/index.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"

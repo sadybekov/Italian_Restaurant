@@ -40,6 +40,7 @@ const renderSection = (id) => {
   }
 
   for (let i = 0; i < menu.length; i++) {
+    const element = document.createElement("div");
     const elementName = document.createElement("h4");
     const contentName = document.createTextNode(`${menu[i].name} `);
     const contentPrice = document.createTextNode(` \\$${menu[i].price}`);
@@ -47,11 +48,12 @@ const renderSection = (id) => {
     elementName.appendChild(contentName);
     elementName.classList.add("section_name");
     elementName.appendChild(contentPrice);
-    if (menu[i].spicy === true) {
+
+    if (menu[i].spicy) {
+      element.classList.add("show_spicy");
       elementName.classList.add("spicy");
     }
-
-    section.appendChild(elementName);
+    element.appendChild(elementName);
 
     const elementDescription = document.createElement("p");
     const contentDescription = document.createTextNode(
@@ -59,9 +61,15 @@ const renderSection = (id) => {
     );
     elementDescription.classList.add("section_description");
     elementDescription.appendChild(contentDescription);
-    section.appendChild(elementDescription);
+
+    element.appendChild(elementDescription);
+    section.appendChild(element);
   }
 };
+
+// function showSpicy() {
+//   console.log("is checkbox checked ? ");
+// }
 
 const renderMenu = () => {
   renderSection("starters");
