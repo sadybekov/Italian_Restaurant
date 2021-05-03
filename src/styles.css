@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif, Arial, Helvetica;
-  color: #cccccc;
+  color: #f1f1f1;
   margin: 0;
 
   background-image: url(/assets/backgroundImg.jpg);
@@ -25,6 +25,10 @@ body {
   top: 2px;
   margin-right: 5px;
   margin-left: 2px;
+}
+
+.section {
+  background-color: #abababbb;
 }
 
 /* .container {
@@ -61,11 +65,11 @@ body {
   box-sizing: border-box;
 } */
 
-[class*="col-"] {
-  /* border: 1px solid whitesmoke; */
-  /* padding: 10px; */
-  /* float: left; */
-}
+/* [class*="col-"] { */
+/* border: 1px solid whitesmoke; */
+/* padding: 10px; */
+/* float: left; */
+/* } */
 
 .section_name {
   margin-left: 20px;
